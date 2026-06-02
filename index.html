@@ -3,190 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeruLux | AI-Powered Travel Optimization</title>
+    <title>WeruLux Startup Presentation - May 2026</title>
     <style>
-        :root {
-            --primary-color: #7b1e28;
-            --secondary-color: #8c8c8c;
-            --text-color: #333333;
-            --bg-color: #f9f9f9;
-            --white: #ffffff;
-        }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-        }
-
-        header {
-            background-color: var(--white);
-            padding: 20px 50px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        header h1 {
-            color: var(--primary-color);
-            margin: 0;
-            font-size: 2em;
-            letter-spacing: 1px;
-        }
-
-        header nav a {
-            text-decoration: none;
-            color: var(--text-color);
-            margin-left: 20px;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        header nav a:hover {
-            color: var(--primary-color);
-        }
-
-        .hero {
-            background: linear-gradient(rgba(123, 30, 40, 0.85), rgba(123, 30, 40, 0.7)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80') center/cover;
-            color: var(--white);
-            text-align: center;
-            padding: 120px 20px;
-        }
-
-        .hero h2 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .hero p {
-            font-size: 1.2em;
-            max-width: 800px;
-            margin: 0 auto 40px auto;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: var(--white);
-            color: var(--primary-color);
-            padding: 15px 35px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1em;
-            border-radius: 5px;
-            transition: background 0.3s, transform 0.2s;
-        }
-
-        .btn:hover {
-            background-color: var(--secondary-color);
-            color: var(--white);
-            transform: translateY(-2px);
-        }
-
-        section {
-            padding: 80px 20px;
-            max-width: 1200px;
+            color: #333;
+            max-width: 1000px;
             margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f9;
         }
-
-        .section-title {
+        header {
             text-align: center;
-            color: var(--primary-color);
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 50px auto;
-            font-size: 1.1em;
-            color: #555;
-        }
-
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background: var(--white);
-            padding: 40px 30px;
+            padding: 40px 20px;
+            background-color: #8A1525;
+            color: white;
             border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #8A1525; border-bottom: 2px solid #8A1525; padding-bottom: 5px; margin-top: 30px; }
+        h3 { color: #555; }
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        ul { margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .footer {
             text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card h3 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            font-size: 1.4em;
-        }
-
-        .features {
-            background-color: var(--white);
-        }
-
-        footer {
-            background-color: var(--text-color);
-            color: var(--white);
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        footer h2 {
-            margin-bottom: 10px;
-        }
-
-        footer p {
-            margin-bottom: 10px;
-            color: #ddd;
-        }
-
-        footer a {
-            color: var(--secondary-color);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: var(--white);
-        }
-        
-        .footer-bottom {
             margin-top: 40px;
+            padding: 20px;
             font-size: 0.9em;
-            color: var(--secondary-color);
-            border-top: 1px solid #555;
-            padding-top: 20px;
-        }
-
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                padding: 20px;
-            }
-            header nav {
-                margin-top: 15px;
-            }
-            header nav a {
-                margin: 0 10px;
-            }
-            .hero h2 {
-                font-size: 2.5em;
-            }
+            color: #666;
         }
     </style>
 </head>
@@ -194,91 +52,94 @@
 
     <header>
         <h1>WeruLux</h1>
-        <nav>
-            <a href="#problem">The Problem</a>
-            <a href="#solution">Our Solution</a>
-            <a href="#journey">The Journey</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <p>Startup Presentation - May 2026</p>
+        <p><em>Billions Travel, Human Performance Doesn’t</em></p>
     </header>
 
-    <div class="hero">
-        <h2>Optimize Your Human Performance</h2>
-        <p>Werulux is an AI-powered travel platform that reduces jet lag and travel fatigue through real-time, personalized guidance before, during, and after flights.</p>
-        <a href="#contact" class="btn">Upgrade Your Travel Experience</a>
+    <div class="section">
+        <h2>The Problem & The Gap</h2>
+        <p>Jet lag and travel fatigue lead to reduced cognitive performance, poor sleep quality, and lower productivity & well-being. Yet today’s solutions are generic, static, and not personalized.</p>
+        <p><strong>The Scale:</strong> With 4.5+ billion air passengers per year, 100M+ premium & frequent travelers are most affected. Millions cross time zones daily, disrupting sleep, cognition, and recovery.</p>
+        <p><strong>The Gap:</strong> A global travel system built for logistics, not for human biology.</p>
     </div>
 
-    <section id="problem">
-        <h2 class="section-title">The Gap in Global Travel</h2>
-        <p class="section-subtitle">
-            The global travel system is built for logistics, not for human biology. Jet lag remains poorly managed, significantly impacting travelers’ well-being, cognitive performance, and recovery after long-haul flights.
-        </p>
-        <div class="grid-3">
-            <div class="card">
-                <h3>Reduced Performance</h3>
-                <p>Millions cross time zones daily, leading to disrupted sleep, lower productivity, and reduced cognitive performance.</p>
-            </div>
-            <div class="card">
-                <h3>Complex Planning</h3>
-                <p>Travel planning for sleep, meals, work, and recovery is complex and mentally taxing for frequent flyers.</p>
-            </div>
-            <div class="card">
-                <h3>Lack of Support</h3>
-                <p>Airlines lack personalized, end-to-end support across the travel journey. Today's solutions are generic, static, and not personalized.</p>
-            </div>
-        </div>
-    </section>
+    <div class="section">
+        <h2>The Opportunity & Our Approach</h2>
+        <p><strong>The Opportunity:</strong> A new layer for travel: Real-time, AI-powered human performance optimization.</p>
+        <p><strong>Our Approach:</strong> Werulux is an AI-powered travel platform that reduces jet lag and travel fatigue through real-time, personalized guidance before, during, and after flights. Our AI system orchestrates optimal timing for sleep, meals, light exposure, and recovery based on individual patterns and travel context.</p>
+        <ul>
+            <li>We enhance in-flight rest through targeted light therapy to regulate circadian rhythms and acoustic stimulation to accelerate sleep onset.</li>
+            <li>We integrate physiological signals (EEG) to continuously refine recommendations based on real-time data.</li>
+        </ul>
+    </div>
 
-    <section id="solution" class="features">
-        <h2 class="section-title">The WeruLux Solution</h2>
-        <p class="section-subtitle">
-            Unlike static recommendations, our system adapts dynamically to each traveler’s biology, itinerary, and behavior to optimize sleep, alertness, and recovery across time zones.
-        </p>
-        <div class="grid-3">
-            <div class="card">
-                <h3>Real-time AI Guidance</h3>
-                <p>Our AI system orchestrates optimal timing for sleep, meals, light exposure, and recovery based on individual patterns and context.</p>
-            </div>
-            <div class="card">
-                <h3>Advanced Stimulation</h3>
-                <p>We enhance in-flight rest through targeted light therapy to regulate circadian rhythms and acoustic stimulation to accelerate sleep onset.</p>
-            </div>
-            <div class="card">
-                <h3>Physiological Integration</h3>
-                <p>We integrate physiological signals (EEG) via wearable technologies to continuously refine and personalize the travel experience.</p>
-            </div>
-        </div>
-    </section>
+    <div class="section">
+        <h2>How WeruLux Works</h2>
+        <ol>
+            <li><strong>Pre-Flight Assessment:</strong> Users complete a short, adaptive check-in capturing itinerary, sleep patterns, risk factors, and travel goals. WeruLux predicts jet lag risk and builds a personalized profile.</li>
+            <li><strong>Personalized Travel Plan:</strong> AI generates a tailored plan based on the user’s profile and stated goals (e.g., optimal sleep timing, light exposure, and behavioral adjustments).</li>
+            <li><strong>In-Flight Adaptive Guidance:</strong> Real-time recommendations adjust dynamically during the flight using physiological signals. Guidance continuously aligns with the user’s goals.</li>
+            <li><strong>Post-Flight Recovery Optimization:</strong> Werulux continues support after arrival, tracking recovery and refining guidance to restore circadian alignment faster.</li>
+        </ol>
+    </div>
 
-    <section id="journey">
-        <h2 class="section-title">Your End-to-End Journey</h2>
-        <p class="section-subtitle">We deliver a continuous, data-driven layer of guidance from the lounge to your final destination.</p>
-        <div class="grid-3">
-            <div class="card">
-                <h3>1. Pre-Flight</h3>
-                <p>Users complete a short, adaptive check-in capturing their itinerary, sleep patterns, and travel goals. The AI generates a tailored plan for optimal sleep timing and light exposure.</p>
-            </div>
-            <div class="card">
-                <h3>2. In-Flight</h3>
-                <p>Real-time recommendations adjust dynamically during the flight using physiological signals. Cabin crew can assist based on the customer recommendations they receive.</p>
-            </div>
-            <div class="card">
-                <h3>3. Post-Flight</h3>
-                <p>Werulux continues support after arrival using passive mobile monitoring (accelerometers, charging times), tracking recovery and refining guidance to restore circadian alignment faster.</p>
-            </div>
+    <div class="grid">
+        <div class="section">
+            <h2>Value Creation</h2>
+            <ul>
+                <li>Reduced jet lag and improved in-flight sleep quality.</li>
+                <li>Seamless, personalized travel experience across the entire journey.</li>
+                <li>Faster post-flight recovery and improved cognitive performance.</li>
+                <li>Differentiated premium experience through hyper-personalization.</li>
+                <li>Increased customer satisfaction and loyalty among high-value travelers.</li>
+            </ul>
         </div>
-    </section>
-
-    <footer id="contact">
-        <h2>Ready to transform the way you travel?</h2>
-        <p><strong>Weru:</strong> Wellness in Japanese &nbsp;|&nbsp; <strong>Lux:</strong> Light in Latin</p>
-        <p style="margin-top: 20px;">Email: <a href="mailto:louisa@werulux.jp">louisa@werulux.jp</a></p>
-        <p>Contact (UAE): +971 54 76 13133 &nbsp;|&nbsp; Contact (Japan): +81 70 1425 6055</p>
         
-        <div class="footer-bottom">
-            &copy; 2026 WeruLux. All rights reserved.
+        <div class="section">
+            <h2>Our Target Users</h2>
+            <h3>Primary Focus (Initial Market)</h3>
+            <ul>
+                <li>Frequent flyers.</li>
+                <li>First & Business Class passengers.</li>
+                <li>High-frequency business travelers.</li>
+            </ul>
+            <h3>High-Need Segment</h3>
+            <ul>
+                <li>Jet lag-sensitive travelers.</li>
+                <li>Performance-driven professionals.</li>
+            </ul>
+            <p><strong>Expansion:</strong> Economy class passengers (scaled, accessible solution).</p>
         </div>
-    </footer>
+    </div>
+
+    <div class="section">
+        <h2>Why "WeruLux"?</h2>
+        <ul>
+            <li><strong>WERU:</strong> Inspired by “wellness” in Japanese.</li>
+            <li><strong>LUX:</strong> Derived from the Latin word for "light", referring to the science-backed light therapy for circadian alignment.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>The Team</h2>
+        <ul>
+            <li><strong>Louisa Uchikoshi</strong> - Paris-Saclay University / Waseda University</li>
+            <li><strong>Renske Lok, PhD</strong> - Circadian Physiologist, Stanford University</li>
+            <li><strong>Abdelkader Belkacem, PhD</strong> - Director of Cognitive AI Robotics lab, Tokyo Institute of Technology</li>
+            <li><strong>Guillaume Hansali</strong> - Entrepreneur and university president (Tokyo, Japan)</li>
+            <li><strong>Jamie Zeitzer, PhD</strong> - Co-Director, Center for Sleep and Circadian Sciences, Stanford/Harvard</li>
+            <li><strong>Sara Hanouti</strong> - Finance Professional, EM Lyon Business School / EY France</li>
+            <li><strong>Ilyes Bouchada</strong> - Full-stack Engineer</li>
+            <li><strong>Nada Nouha Aderghal</strong> - Embedded Systems Engineer, BCI Researcher</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <h3>Contact Us</h3>
+        <p>Email: louisa@werulux.jp</p>
+        <p>Phone: +81 70 1425 6055 (Japan) | +971 54 76 13133 (UAE)</p>
+        <p>Thank you for your attention.</p>
+    </div>
 
 </body>
 </html>

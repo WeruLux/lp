@@ -10,7 +10,7 @@ Official landing page for WeruLux, an AI-powered travel wellness platform combin
 
 WeruLux is built for travelers, airlines, and corporations who understand that human performance depends on biological rhythm — not just logistics. The platform delivers neuroadaptive, real-time, biologically personalized recommendations before, during, and after every flight.
 
-Incorporated in Japan · Tokyo | Dubai · Est. 2026
+Established in Japan · Tokyo | Dubai · Est. 2026
 
 ---
 

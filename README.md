@@ -20,8 +20,4 @@ Incorporated in Japan · Tokyo | Dubai · Est. 2026
 - No frameworks or dependencies
 - Fully responsive
 
----
 
-## Contact
-
-louisa@WeruLux.jp
